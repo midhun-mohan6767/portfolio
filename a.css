@@ -1,0 +1,259 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* for sme style in everyone  just coping in the google*/
+    font-family: "Anton", sans-serif;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.list-items {
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+
+/* avoid the under line of a tag */
+.links {
+    text-decoration: none;
+    font-weight: 100;
+    color: black;
+}
+
+/* thwn we use special style pseudo class is used*/
+.links:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/* then we make home */
+.home-content {
+    margin: 13% 0px 0px 8%;
+}
+#username{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Wittgenstein", serif;
+}
+#lname{
+    color: brown;
+    font-family: "Ga Maamli", sans-serif;
+
+}
+#download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+}
+.home-img{
+    width: 45%;
+    height: 70%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition:bottom 2s,left 1s;
+}
+.home-img:hover #shape{
+    bottom: 70px;
+
+}
+.home-img:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 15% 8% 0px 8%;
+}
+.section-head{
+    text-align: center;
+}
+.main-head{
+    font-size: 30px;
+}
+.sub-head{
+    font-size: 20px;
+    color: rgb(25, 34, 34);
+}
+.about-body{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 20px;
+    align-items: center;
+
+}
+/* .about-img>img{
+    width: 80%;
+}
+ */
+ .about-content{
+    font-size: 20px;
+    text-align: justify;
+ }
+ .information{
+    margin-top: 1.3rem;
+ }
+ .info-box{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+ }
+ .info-box>span{
+    margin-left: 1rem;
+ }
+ #skill{
+    margin: 0px 0px 8% 0px;
+ }
+ .myskill{
+    width: 100%;
+
+ }
+ .skill-contents{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 20px;
+    align-items: center;
+ }
+ .bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+ }
+ .bar-head,.bar-percent{
+    font-weight: 500;
+    font-size: 1.2rem;
+ }
+ .base-bar{
+    background-color: black;
+    height: 0.5rem;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+ }
+ .html-bar{
+    background-color: orangered;
+    width: 89%;
+ }
+ .css-bar{
+    background-color: orangered;
+    width: 82%;
+ }
+ .JS-bar{
+    background-color: orangered;
+    width: 79%;
+ }
+ .REACT-bar{
+    background-color: orangered;
+    width: 75%;
+ }
+ .bars{
+    padding: 0px 30px;
+ }
+ #contact{
+    margin:10px 8%;
+ }
+ .icon-collection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+ }
+ .icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: solid 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+ }
+.brands{
+    color: black;
+    font-size: 30px;
+ }
+ .icon:hover{
+    background-image: linear-gradient(to bottom right,white,yellow,red,violet);
+ }
+ .icon:hover .brands{
+    color: white;
+    animation: rotate 3s ;
+ }
+ @keyframes rotate {
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+
+    
+    80%{
+    transform: rotate(30deg);
+}
+100%{
+    transform: rotate(-30deg);
+}
+ }
+ .copyright{
+    text-align: center;
+    font-weight: 600;
+ }
+ .up-arrow{
+    float: right;
+    margin: -40px 30px 30px 0px;
+ }
+ html{
+    scroll-behavior: smooth;
+ }
+/* style the scrool bar */
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+
+}
+::-webkit-scrollbar-track{
+    background-color: azure;
+
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: darkorange;
+    border-radius: 10px;
+}
